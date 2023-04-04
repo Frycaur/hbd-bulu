@@ -68,3 +68,29 @@ p {
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+button {
+	background-color: #FF9AA2;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+	background-color: #FF6B6B;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+	background-color: #FFD2E2;
+	padding: 20px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
