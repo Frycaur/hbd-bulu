@@ -1,62 +1,49 @@
 body {
-	font-family: sans-serif;
-	background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6ff;
+  margin: 0;
 }
 
-header {
-	background-color: #f2c942;
-	color: white;
-	padding: 20px;
-	text-align: center;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
 }
 
-h1 {
-	font-size: 50px;
-	margin-bottom: 10px;
+.header {
+  background-color: #ffcccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-main {
-	padding: 20px;
-	text-align: center;
+.header h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #ff6666;
 }
 
-#slideshow-container {
-	position: relative;
-	height: 500px;
-	margin-bottom: 20px;
+.content {
+  background-color: #fff0f5;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-#slideshow-container img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.content p {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.message {
-	font-size: 30px;
-	margin-bottom: 20px;
-	animation: bounce 1s ease-in-out infinite;
+img {
+  max-width: 100%;
 }
 
-@keyframes bounce {
-	0%, 100% {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(-20px);
-	}
+@keyframes float {
+  from { transform: translate(0, 0px); }
+  to { transform: translate(0, 20px); }
 }
 
-footer {
-	background-color: #444;
-	color: white;
-	padding: 10px;
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
+.balloons {
+  animation: float 2s ease-in-out infinite;
 }
