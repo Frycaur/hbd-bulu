@@ -1,49 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffe6ff;
-  margin: 0;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', sans-serif;
+	background-color: #F9AEBD;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 30px;
+header {
+	background-color: #FFD2E2;
+	padding: 20px;
+	text-align: center;
 }
 
-.header {
-  background-color: #ffcccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
+.photo-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.header h1 {
-  font-size: 48px;
-  margin: 0;
-  color: #ff6666;
+.photo-gallery img {
+	margin: 10px;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
 }
 
-.content {
-  background-color: #fff0f5;
-  border-radius: 10px;
-  padding: 20px;
+.photo-gallery img:hover {
+	transform: scale(1.1);
 }
 
-.content p {
-  font-size: 24px;
-  margin-bottom: 20px;
+.message {
+	background-color: #FFD2E2;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-img {
-  max-width: 100%;
+h2 {
+	font-size: 36px;
+	margin-bottom: 10px;
 }
 
-@keyframes float {
-  from { transform: translate(0, 0px); }
-  to { transform: translate(0, 20px); }
+p {
+	font-size: 18px;
 }
 
-.balloons {
-  animation: float 2s ease-in-out infinite;
+#pop-up-message {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
 }
+
+.pop-up-container {
+	background-color: #FFD2E2;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
