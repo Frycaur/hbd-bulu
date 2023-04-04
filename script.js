@@ -1,1 +1,4 @@
-// tidak perlu ada kode JavaScript pada contoh ini
+const balloons = document.querySelector('.balloons');
+balloons.addEventListener('click', () => {
+  balloons.classList.add('floating');
+});
